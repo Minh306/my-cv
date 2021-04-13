@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet/less" type="text/less" href="assets/css/styles.less" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Resume</title>
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader-outer" id="preloader">
+        <div class="preloader">
+            <div class="lines">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+            </div>
+
+            <div class="loading-text">Hi! I'm Minh</div>
+        </div>
+    </div>
+
+    <!-- class="scale-cv" -->
+    <!-- HEADER -->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="" class="nav__logo">Smith</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home nav__icon'></i>
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#profile" class="nav__link">
+                            <i class='bx bx-user nav__icon'></i>
+                            Profile
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">
+                            <i class='bx bx-book nav__icon'></i>
+                            Education
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-receipt nav__icon'></i>
+                            Skills
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link">
+                            <i class='bx bx-briefcase-alt nav__icon'></i>
+                            Experience
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#certificates" class="nav__link">
+                            <i class='bx bx-award nav__icon'></i>
+                            Certificates
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#references" class="nav__link">
+                            <i class='bx bx-link-external nav__icon'></i>
+                            References
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="bx bx-grid-alt"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main bd-container">
+        <!-- GENERATE PDF -->
+        <div class="resume" id="area-cv">
+            <div class="resume__left">
+                <!-- HOME -->
+                <section class="home" id="home">
+                    <div class="home__container section bd-grid">
+                        <div class="home__data bd-grid">
+                            <img src="./assets/img/71379384_2502535073321025_6411230418703482880_n.jpg" alt=""
+                                class="home__img">
+
+                            <div class="title__name">
+                                <h1 class="home__title" id="home__title"><b>MINH LE</b></h1>
+                                <h1 class="apresenteichan" id="apresenteichan">
+                                    <b>MINH LE</b>
+                                </h1>
+                            </div>
+                            <h3 class="home__profession">Front-End Developer</h3>
+
+                            <!-- Button download CV -->
+                            <div>
+                                <a download="" href="./assets/pdf/ResumeCv.pdf" class="home__button">
+                                    DOWNLOAD
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="home__address bd-grid">
+                            <span class="home__information">
+                                <i class="bx bx-calendar home__icon"></i>
+                                August 26, 1999
+                            </span>
+
+                            <span class="home__information">
+                                <i class="bx bx-envelope home__icon"></i>
+                                minh.le260899@gmail.com
+                            </span>
+
+                            <span class="home__information">
+                                <i class="bx bx-map home__icon"></i>
+                                Ho Chi Minh City
+                            </span>
+
+
+                            <span class="home__information">
+                                <i class="bx bx-phone home__icon"></i>
+                                0927 153 268
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- THEME CHANGE BUTTON -->
+                    <i class="bx bx-moon change-theme" title="Theme" id="theme-button"></i>
+
+                    <!-- BUTTON DOWNLOAD PDF -->
+                    <i class="bx bx-download generate-pdf" title="Generate PDF" id="resume-button"></i>
+                </section>
+
+                <!-- SOCIAL -->
+                <section class="social section">
+                    <h2 class="section-title">SOCIAL</h2>
+
+                    <div class="social__container bd-grid">
+                        <a href="https://github.com/minh306" target="blank" class="social__link">
+                            <i class='bx bxl-github social__icon'></i>
+                            github.com/minh306
+                        </a>
+                        <a href="https://www.facebook.com/minh.hy306" target="blank" class="social__link">
+                            <i class='bx bxl-facebook social__icon'></i>
+                            facebook.com/minh.hy306
+                        </a>
+                        <a href="https://www.instagram.com/862_yh.hnim/" target="blank" class="social__link">
+                            <i class='bx bxl-instagram social__icon'></i>
+                            instagram.com/862_yh.hnim
+                        </a>
+                    </div>
+                </section>
+
+                <!-- PROFILE -->
+                <section class="profile section" id="profile">
+                    <h2 class="section-title">Profile</h2>
+
+                    <p class="profile__description">
+                        I’m a front-end developer with 1 years of experience in building web application (ReactJS), with
+                        good knowledge of Reactive Programming.
+                    </p>
+                </section>
+
+                <!-- EDUCATION -->
+                <section class="education section" id="education">
+                    <h2 class="section-title">Education</h2>
+
+                    <div class="education__container bd-grid">
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title">SOFTWARE ENGINERING</h3>
+                                <span class="education__studies">Van Lang University</span>
+                                <span class="education__year">2017 - Now</span>
+                            </div>
+                        </div>
+
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <!-- <span class="education__line"></span> -->
+                            </div>
+
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title">Front-End Developer</h3>
+                                <span class="education__studies">CyberSoft Academy</span>
+                                <span class="education__year">2020 - 2021</span>
+                            </div>
+                        </div>
+
+                        <!-- <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                            </div>
+
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title">UI/UX DESIGN</h3>
+                                <span class="education__studies">University FDS</span>
+                                <span class="education__year">2020 - 2025</span>
+                            </div>
+                        </div> -->
+                    </div>
+                </section>
+
+                <section class="skills section" id="skills">
+                    <h2 class="section-title">Skills</h2>
+
+                    <div class="skills__content bd-grid">
+                        <ul class="skills__data">
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>
+                                Html
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>
+                                Css
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>
+                                Scss
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>
+                                JavaScript
+                            </li>
+                        </ul>
+
+                        <ul class="skills__data">
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>
+                                ReactJS
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>
+                                Redux
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <div class="resume__right">
+                <!-- EXPERIENCE -->
+                <section class="experience section" id="experience">
+                    <h2 class="section-title">Experience</h2>
+
+                    <div class="experience__container bd-grid">
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">Cyper Movie</h3>
+                                <span class="experience__company">From 2020 to 2021 | <b>Front-End Developer</b></span>
+                                <p class="experience__description">
+                                    UX / UI design, logic processing for user interface and administration interface
+                                    (Html, Css / Scss, JavaScript, ReactJS, Redux) of Cyper Movie - an online movie
+                                    ticketing
+                                    website project
+                                </p>
+                                <div class="project-review">
+                                    <a class="project__link" href="https://github.com/Minh306/cyper-movie" target="blank"
+                                        onmouseover="hoverIn(getImage1)"
+                                        onmouseout="hoverOut(getImage1)"><b>github.com/Minh306/cyper-movie</b></a>
+                                    <div class="project-img">
+                                        <img class="project-img__img" src="/assets/img/project-1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">Fiverr</h3>
+                                <span class="experience__company">From 2020 to 2021 | <b>Front-End Developer</b></span>
+                                <p class="experience__description">
+                                    Cut the interface homepage (Html ​​/ Scss) of fiverr website - the site that uploads
+                                    the freelance services of the freelance talents
+                                </p>
+                                <div class="project-review">
+                                    <a class="project__link" href="https://github.com/Minh306/fiverr"
+                                        onmouseover="hoverIn(getImage2)"
+                                        onmouseout="hoverOut(getImage2)"><b>github.com/Minh306/fiverr</b></a>
+                                    <div class="project-img">
+                                        <img class="project-img__img" src="/assets/img/project-2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <!-- <span class="experience__line"></span> -->
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">Curriculum Vitae</h3>
+                                <span class="experience__company">From 2020 to 2021 | <b>Front-End Developer</b></span>
+                                <p class="experience__description">
+                                    Design my Curriculum Vitae (Html, Css / Less, JavaScript )
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CERTIFICATES -->
+                <section class="certificate section" id="certificates">
+                    <h2 class="section-title">Certificates</h2>
+
+                    <div class="certificate__container bd-grid">
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">Graduated with excellence in Cypersoft Academy (2021)</h3>
+                            <p class="certificate__description">For having completed the graduation project completely
+                            </p>
+                        </div>
+
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">A Bachelor of Software Engineering by Van Lang University
+                                (2021)</h3>
+                            <p class="certificate__description">Studied Software Engineering at Van Lang University that
+                                transferred from Carnegie Mellon University, US.
+                            </p>
+                        </div>
+
+                        <!-- <div class="certificate__content">
+                            <h3 class="certificate__title">Achievement medal for productivity excellence during the year
+                                (2019)</h3>
+                            <p class="certificate__description">For meeting the expectations of leading the team to work
+                                the specified tasks in the labor field.</p>
+                        </div> -->
+                    </div>
+                </section>
+
+                <!-- REFERENCES -->
+                <!-- <section class="references section" id="references">
+                    <h2 class="section-title">References</h2>
+
+                    <div class="references__container bd-grid">
+                        <div class="references__content bd-grid">
+                            <span class="references__subtitle">St. Director</span>
+                            <h3 class="references__title">Mr. Clay Moe</h3>
+                            <ul class="references__contact">
+                                <li>Phone: 999-777-666</li>
+                                <li>Email: user@gmail.com</li>
+                            </ul>
+                        </div>
+
+                        <div class="references__content bd-grid">
+                            <span class="references__subtitle">Mag. Developer</span>
+                            <h3 class="references__title">Mr. Rod</h3>
+                            <ul class="references__contact">
+                                <li>Phone: 999-777-666</li>
+                                <li>Email: user@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section> -->
+
+                <!-- LANGUAGES -->
+                <section class="languages section">
+                    <h2 class="section-title">Languages</h2>
+
+                    <div class="languages__container">
+                        <ul class="languages__content bd-grid">
+                            <!-- <li class="languages__name">
+                                <span class="languages__circle"></span>
+                                Japanese
+                            </li> -->
+                            <li class="languages__name">
+                                <span class="languages__circle"></span>
+                                English (Reading)
+                            </li>
+                            <li class="languages__name">
+                                <span class="languages__circle"></span>
+                                Vietnamese
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- INTERESTS -->
+                <section class="interests section">
+                    <h2 class="section-title">Interests</h2>
+
+                    <div class="interests__container bd-grid">
+                        <div class="interests__content">
+                            <i class="bx bx-headphone interests__icon"></i>
+                            <span class="interests__name">
+                                Music
+                            </span>
+                        </div>
+
+                        <div class="interests__content">
+                            <i class="bx bxs-plane-alt interests__icon"></i>
+                            <span class="interests__name">
+                                Travel
+                            </span>
+                        </div>
+
+                        <div class="interests__content">
+                            <i class="bx bx-book interests__icon"></i>
+                            <span class="interests__name">
+                                Read
+                            </span>
+                        </div>
+
+                        <div class="interests__content">
+                            <i class="bx bx-swim interests__icon"></i>
+                            <span class="interests__name">
+                                Swimming
+                            </span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- SCROLL TOP -->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
+    </a>
+    <!-- HTML2PDF.JS -->
+    <script src="./assets/js/html2pdf.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/4.1.1/less.js"
+        integrity="sha512-rz8ayzHG2x1fSqES/h2a1eAmYTAO820KkraRinn5KikhCZu5CssEHbGO0TfWsMaJHmAUXRFx+BX7B816/RmC5Q=="
+        crossorigin="anonymous"></script>
+
+    <!-- MAIN JS -->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
