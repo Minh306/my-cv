@@ -235,15 +235,22 @@ TweenMax.staggerFrom(".education__data span", 1, {
     delay: 2, opacity: 0, x: -30, ease: Expo.easeInOut
 }, 0.2)
 
+// TweenMax.from(".project-review", 1, {
+//     delay: 2, opacity: 0, x: -30, ease: Expo.easeInOut
+// })
+
 TweenMax.staggerFrom(".experience__data h3", 1, {
     delay: 2, opacity: 0, x: -30, ease: Expo.easeInOut
 }, 0.2)
+
 TweenMax.staggerFrom(".experience__data span", 1, {
     delay: 2, opacity: 0, x: -30, ease: Expo.easeInOut
 }, 0.2)
+
 TweenMax.staggerFrom(".experience__data p", 1, {
     delay: 2, opacity: 0, x: -30, ease: Expo.easeInOut
 }, 0.2)
+
 TweenMax.staggerFrom(".experience__data a", 1, {
     delay: 2, opacity: 0, x: -30, ease: Expo.easeInOut
 }, 0.2)
