@@ -153,7 +153,7 @@ resumeButton.addEventListener('click', () => {
 // HOVER IMAGE
 var getImage1 = document.getElementsByClassName("project-img") [0];
 var getImage2 = document.getElementsByClassName("project-img") [1];
-// var getImage3 = document.getElementsByClassName("project-img") [2];
+var getImage3 = document.getElementsByClassName("project-img") [2];
 // var getImage4 = document.getElementsByClassName("project-img") [3];
 
 function hoverIn(img) {
