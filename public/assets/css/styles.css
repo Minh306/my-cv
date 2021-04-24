@@ -150,7 +150,7 @@ body.scale-cv {
 }
 
 .scale-cv .bd-container {
-  max-width: 595px;
+  max-width: 780px;
 }
 
 .scale-cv .section {
@@ -202,7 +202,7 @@ body.scale-cv {
 .scale-cv .home__icon,
 .scale-cv .social__icon,
 .scale-cv .interests__icon {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .scale-cv .education__container,
@@ -218,8 +218,8 @@ body.scale-cv {
 
 .scale-cv .education__rounder,
 .scale-cv .project__rounder {
-  width: 11px;
-  height: 11px;
+  width: 15px;
+  height: 15px;
   margin-top: 0.3rem;
 }
 
