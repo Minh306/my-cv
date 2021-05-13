@@ -95,20 +95,12 @@ themeButton.addEventListener('click', () => {
 
 /* REDUCE THE SIZE AND PRINT ON AN A4*/
 function scaleCv() {
-    let apresenteichan = document.getElementById("apresenteichan")
-    let homeTitle = document.getElementById("home__title")
     document.body.classList.add('scale-cv')
-    apresenteichan.classList.add('scale-title')
-    homeTitle.classList.add('scale-name')
 }
 
 /* REMOVE SIZE WHEN CV IS DOWNLOAD*/
 function removeScale() {
-    let apresenteichan = document.getElementById("apresenteichan")
-    let homeTitle = document.getElementById("home__title")
     document.body.classList.remove('scale-cv')
-    apresenteichan.classList.remove('scale-title')
-    homeTitle.classList.remove('scale-name')
 }
 
 
@@ -150,6 +142,7 @@ resumeButton.addEventListener('click', () => {
     setTimeout(removeScale, 5000)
 })
 
+
 // HOVER IMAGE
 var getImage1 = document.getElementsByClassName("project-img") [0];
 var getImage2 = document.getElementsByClassName("project-img") [1];
@@ -167,6 +160,8 @@ function hoverOut(img) {
     img.style.visibility = "hidden";
     img.style.transition = "opacity .5s ease-in";
 }
+
+// TweenMax
 
 TweenMax.to(".preloader", 2.5, {
     opacity: 0,
@@ -199,7 +194,7 @@ TweenMax.from(".home__data img", 1, {
     delay: 2, opacity: 0, x: -20, ease: Expo.easeInOut
 })
 
-TweenMax.from(".home__title b", 1, {
+TweenMax.from(".home__title", 1, {
     delay: 2, opacity: 0, x: -20, ease: Expo.easeInOut
 })
 
