@@ -220,13 +220,13 @@ body.scale-cv {
 .scale-cv .project__rounder {
   width: 15px;
   height: 15px;
-  margin-top: 0.3rem;
+  /* margin-top: 0.3rem; */
 }
 
 .scale-cv .education__line,
 .scale-cv .project__line {
   width: 1px;
-  height: 110%;
+  height: 112%;
   transform: translate(5px, 0);
 }
 
@@ -419,79 +419,172 @@ body.scale-cv {
 
 /* EFFECT */
 
-.home__title:before, .home__title:after {
+.home__title {
+  position: relative;
+  /* color: white; */
+  font-size: 4em;
+  /* letter-spacing: 0.5em; */
+ /* Animation provies a slight random skew. Check bottom of doc for more information on how to random skew. */
+  /* animation: glitch-skew 1s infinite linear alternate-reverse; */
+}
+.home__title:hover:before {
+  content: attr(data-text);
   position: absolute;
-  opacity: 0.8;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
-}
-.home__title:before {
-  color: #0ff;
-  z-index: -1;
-}
-.home__title:after {
-  color: #f0f;
-  z-index: -2;
-}
-.home__title:hover:before {
-  content: attr(data-text);
-  animation: glitch 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+  left: 2px;
+  text-shadow: -2px 0 #ff00c1;
+ /* Creates an initial clip for our glitch. This works in a typical top,right,bottom,left fashion and creates a mask to only show a certain part of the glitch at a time. */
+  clip: rect(44px, 450px, 56px, 0);
+ /* Runs our glitch-anim defined below to run in a 5s loop, infinitely, with an alternating animation to keep things fresh. */
+  animation: glitch-animation-1 5s infinite linear alternate-reverse;
 }
 .home__title:hover:after {
   content: attr(data-text);
-  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  left: -2px;
+  text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
+  animation: glitch-animation-2 1s infinite linear alternate-reverse;
 }
-@keyframes glitch {
+/* Creates an animation with 20 steaps. For each step, it calculates a percentage for the specific step. It then generates a random clip box to be used for the random glitch effect. Also adds a very subtle skew to change the 'thickness' of the glitch.*/
+@keyframes glitch-animation-1 {
   0% {
-      -webkit-transform: translate(0);
-      transform: translate(0);
- }
+    clip: rect(112px, 350px, 107px, 30px);
+  }
+  5% {
+    clip: rect(77px, 350px, 99px, 30px);
+  }
+  10% {
+    clip: rect(86px, 350px, 81px, 30px);
+  }
+  15% {
+    clip: rect(73px, 350px, 128px, 30px);
+  }
   20% {
-      -webkit-transform: translate(-5px, 5px);
-      transform: translate(-5px, 5px);
-      transform: skewX(10deg);
- }
+    clip: rect(66px, 350px, 8px, 30px);
+  }
+  25% {
+    clip: rect(75px, 350px, 111px, 30px);
+  }
+  30% {
+    clip: rect(36px, 350px, 45px, 30px);
+  }
+  35% {
+    clip: rect(54px, 350px, 57px, 30px);
+  }
   40% {
-      -webkit-transform: translate(-5px, -5px);
-      transform: translate(-5px, -5px);
- }
+    clip: rect(1px, 350px, 54px, 30px);
+  }
+  45% {
+    clip: rect(95px, 350px, 136px, 30px);
+  }
+  50% {
+    clip: rect(48px, 350px, 41px, 30px);
+  }
+  55% {
+    clip: rect(63px, 350px, 115px, 30px);
+  }
   60% {
-      -webkit-transform: translate(5px, 5px);
-      transform: translate(5px, 5px);
- }
+    clip: rect(57px, 350px, 37px, 30px);
+  }
+  65% {
+    clip: rect(101px, 350px, 44px, 30px);
+  }
+  70% {
+    clip: rect(3px, 350px, 119px, 30px);
+  }
+  75% {
+    clip: rect(121px, 350px, 116px, 30px);
+  }
   80% {
-      -webkit-transform: translate(5px, -5px);
-      transform: translate(5px, -5px);
- }
-  to {
-      -webkit-transform: translate(0);
-      transform: translate(0);
- }
+    clip: rect(57px, 350px, 58px, 30px);
+  }
+  85% {
+    clip: rect(134px, 350px, 66px, 30px);
+  }
+  90% {
+    clip: rect(150px, 350px, 22px, 30px);
+  }
+  95% {
+    clip: rect(22px, 350px, 45px, 30px);
+  }
+  100% {
+    clip: rect(120px, 350px, 90px, 30px);
+  }
+}
+@keyframes glitch-animation-2 {
+  0% {
+    clip: rect(136px, 350px, 136px, 30px);
+  }
+  5% {
+    clip: rect(123px, 350px, 146px, 30px);
+  }
+  10% {
+    clip: rect(120px, 350px, 16px, 30px);
+  }
+  15% {
+    clip: rect(136px, 350px, 110px, 30px);
+  }
+  20% {
+    clip: rect(91px, 350px, 113px, 30px);
+  }
+  25% {
+    clip: rect(105px, 350px, 99px, 30px);
+  }
+  30% {
+    clip: rect(25px, 350px, 95px, 30px);
+  }
+  35% {
+    clip: rect(95px, 350px, 70px, 30px);
+  }
+  40% {
+    clip: rect(28px, 350px, 145px, 30px);
+  }
+  45% {
+    clip: rect(12px, 350px, 22px, 30px);
+  }
+  50% {
+    clip: rect(109px, 350px, 21px, 30px);
+  }
+  55% {
+    clip: rect(56px, 350px, 85px, 30px);
+  }
+  60% {
+    clip: rect(149px, 350px, 22px, 30px);
+  }
+  65% {
+    clip: rect(74px, 350px, 37px, 30px);
+  }
+  70% {
+    clip: rect(63px, 350px, 56px, 30px);
+  }
+  75% {
+    clip: rect(118px, 350px, 103px, 30px);
+  }
+  80% {
+    clip: rect(109px, 350px, 124px, 30px);
+  }
+  85% {
+    clip: rect(89px, 350px, 149px, 30px);
+  }
+  90% {
+    clip: rect(22px, 350px, 122px, 30px);
+  }
+  95% {
+    clip: rect(144px, 350px, 109px, 30px);
+  }
+  100% {
+    clip: rect(69px, 350px, 143px, 30px);
+  }
 }
 
-@keyframes glitch {
-    0% {
-        transform: translate(0)
-    }
-    20% {
-        transform: translate(-5px, 5px)
-    }
-    40% {
-        transform: translate(-5px, -5px)
-    }
-    60% {
-        transform: translate(5px, 5px)
-    }
-    80% {
-        transform: translate(5px, -5px)
-    }
-    to {
-        transform: translate(0)
-    }
-}
+
 
 @media screen and (max-width: 968px) {
   .nav__menu {
@@ -672,14 +765,14 @@ body.scale-cv {
   height: 16px;
   background-color: var(--text-color-light);
   border-radius: 50%;
-  margin-top: 0.25rem;
+  /* margin-top: 0.25rem; */
 }
 
 .education__line,
 .project__line {
   display: block;
   width: 2px;
-  height: 110%;
+  height: 112%;
   background-color: var(--text-color-light);
   transform: translate(7px, 0);
 }
