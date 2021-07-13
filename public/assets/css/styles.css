@@ -220,7 +220,7 @@ body.scale-cv {
 .scale-cv .project__rounder {
   width: 15px;
   height: 15px;
-  /* margin-top: 0.2rem; */
+  margin-top: 0.2rem;
 }
 
 .scale-cv .education__line,
